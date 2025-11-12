@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(22, 50, 22);
+    padding:15px 50px 14px 10px;
+    font-family: "Roboto", sans-serif;
+    position: fixed;
+    top: 0px;
+    z-index: 2; 
+    animation: head 1s linear 1;
+}
+header .logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+header .logo img{
+    width: 50px;
+    height: 50px;
+     animation: nav 1s linear 1;
+}
+header .logo h2{
+     color: rgb(225, 28, 130);
+     letter-spacing: 1px;
+     animation: nav 1.3s linear 1;
+}
+nav ul{
+    display: flex; 
+    gap: 90px;
+    list-style-type: none;
+    font-size: 18px;
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+nav .active{
+    color: rgb(255, 0, 221);
+}
+header nav a:hover{
+    transition: 0.5s;
+    color: rgb(255, 0, 221);
+}
+header .login{
+    padding: 9px 23px;
+    background-color: rgb(225, 28, 130);
+    border-radius: 15px;
+    color: white;
+}
+header .login:hover{
+    color: white;
+    background-color: rgb(171, 15, 116);
+}
+.container{
+    width: 500px;
+    height: 620px;
+    box-shadow:0px 0px 10px gray;
+    margin:100px auto;
+    text-align: center;
+    padding:11px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 4px;
+}
+.container h2{
+    font-size: 34px;
+}
+.box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-top: 40px;
+}
+.box1 input{
+    width: 50%;
+    height: 40px;
+    border-radius: 7px;
+    padding-left:10px ;
+    border:1px solid black;
+    background-color: white;
+    cursor: pointer;
+}
+.btn{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.btn button{
+    padding:10px 20px;
+    border-radius: 5px;
+    background-color: white;
+    border:1px solid;
+    display: flex;
+    justify-content: center;
+}
+.box2{
+    display: flex;
+    justify-content: center;
+}
+.box2 button{
+    margin-top: 30px;
+     width: 300px;
+    height: 40px;
+    border-radius: 7px;
+    padding-left:10px ;
+    border:1px solid blue;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+.box2 a{
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width:575px) {
+       /* header {
+        padding:20px 0px;
+     } */
+     nav ul{
+        gap: 40px;
+        font-size: 14px;
+    }
+    header .search input{
+        width: 100px;
+        height: 40px;
+    }
+    header .search button{
+         width: 30px;
+        height: 40px;
+    }
+    header .search{
+        width: 150px;
+    }
+    .container{
+        width: 400px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:767px) {
+      header {
+        padding:20px 2px;
+     }
+     nav ul{
+        gap: 70px;
+        font-size: 16px;
+    }
+    header .search{
+        width: 200px;
+    }
+    header .search input{
+        width: 150px;
+        height: 40px;
+    }
+    header .search button{
+         width: 30px;
+        height: 40px;
+    }
+}
+

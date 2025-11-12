@@ -1,0 +1,147 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.background{
+    background: url(Collection1/order.png);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px);
+    z-index: -1;
+}
+.container{
+    width: 50%;
+    height: 45%;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+}
+.tick{
+    font-size: 60px;
+    color: green;
+    padding: 30px;
+    animation-name: mail;
+    animation-duration: 3s;
+    animation-iteration-count:1;
+}
+@keyframes mail{
+    from{
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.btn{
+    margin-top: 30px;
+    padding: 10px 20px;
+     font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    border-radius: 15px;
+    background-color: blue;
+    color: white;
+    border:none;
+    cursor: pointer;
+    animation: btn 3s 1;
+}
+@keyframes btn{
+    from{
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.btn:hover{
+    transition: 0.8s;
+    transform: scale(1.1);
+}
+.container h2{
+    padding-bottom: 20px;
+    animation-name: mail;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+p{
+    font-size: 20px;
+    font-weight: 300;
+    animation-name: mail;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+@media screen and (max-width:575px) {
+    .container{
+        height: 50%;
+    }
+       header {
+        padding:20px 0px;
+     }
+     nav ul{
+        gap: 10px;
+        font-size: 14px;
+    }
+    header .search input{
+        width: 100px;
+        height: 40px;
+    }
+    header .search button{
+         width: 30px;
+        height: 40px;
+    }
+    header .search{
+        width: 150px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:767px) {
+      header {
+        padding:20px 2px;
+     }
+     nav ul{
+        gap: 20px;
+        font-size: 15px;
+    }
+    header .search{
+        width: 200px;
+    }
+    header .search input{
+        width: 150px;
+        height: 40px;
+    }
+    header .search button{
+         width: 30px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+       header {
+        gap: 20px;
+    }
+    nav ul{
+        gap: 40px;
+        font-size: 17px;
+    }
+    header .search{
+        width: 300px;
+    }
+    header .search input{
+        width: 220px;
+        height: 40px;
+    }
+    header .search button{
+         width: 30px;
+        height: 40px;
+    }
+}
